@@ -20,6 +20,10 @@ section::before{
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
+#home{
+    padding-top: 72px;
+}
+
 .home h1 {
     font-size: 72px;
 }
@@ -144,6 +148,32 @@ section::before{
     font-weight: 500;
     font-size: 16px;
 }
+
+@media only screen and (max-width: 768px){
+    #home{
+        padding-top: 36px;
+    }
+    .home h3, h1, p, .btn.button{
+        display:flex;
+        justify-content: center;
+    }
+    .btn.button:hover, .btn.button.active {
+        border: 1.5px solid black;
+        background-color: black;
+        color:white;
+    }
+
+    .foto img{
+        width:72%;
+        padding-top: 0;
+        padding-bottom: 16px;
+    }
+    section::before{
+        font-size: 64px;
+        left: 0;
+    }
+}
+    
 
 @keyframes Updown {
     0%{
