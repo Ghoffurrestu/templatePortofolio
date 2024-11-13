@@ -153,9 +153,19 @@ section::before{
     #home{
         padding-top: 36px;
     }
-    .home h3, h1, p, .btn.button{
+    .home h3, p, .btn.button{
         display:flex;
         justify-content: center;
+    }
+    .home h1{
+        font-size: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn.button {
+        border: 1.5px solid black;
+        border-radius: 24px;
     }
     .btn.button:hover, .btn.button.active {
         border: 1.5px solid black;
